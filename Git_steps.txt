@@ -1,0 +1,16 @@
+git init
+git add README.md
+git add .   (for adding all the file or mention the file name to just add it)
+git commit -me "first commit"
+git remote add origin https://github.com/diptarkagupta81/Flask_basics.git            (replace the link from code https and paste it here)
+git push -u origin master
+
+
+
+
+
+or for main branch after commit steps use these commands
+
+git branch -M main
+git remote add origin https://github.com/diptarkagupta81/Portfolio1.git
+git push -u origin main

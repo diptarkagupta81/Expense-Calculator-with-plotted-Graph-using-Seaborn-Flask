@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block style %}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+{% endblock %}
+
+
+{% block content %}
+
+<h1>product No</h1>
+
+{% if result %}
+
+<table id="" style="width:100%">
+  <tr>
+    <th> INCOME </th>
+    <th> EXPENSE </th>
+  </tr>
+
+  {% for row in result %}
+  <tr>
+    <td>{{row.Income}}</td>
+    <td>{{row.Expense}}</td>
+  </tr>
+  {% endfor %}
+
+#Delete this
+  <h2>{% print(result) %}</h2>
+
+</table>
+{% endif %}
+
+{% endblock %}
